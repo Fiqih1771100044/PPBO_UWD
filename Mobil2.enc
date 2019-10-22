@@ -1,0 +1,40 @@
+<?php
+class kendaraan{
+	
+private $merk;
+private $harga;
+private $negara;
+
+function __construct ($merk,$harga,$negara){
+$this->merk=$merk;
+$this->harga=$harga;
+$this->negara=$negara;
+}
+function Bacamerk(){
+return $this->merk;
+}
+function Bacaharga(){
+return $this->harga;
+}
+function Bacahegara(){
+return $this->negara;
+}
+}
+$mobil = new kendaraan("Avansa",800000000,"Francis");
+echo "Merk kendaraan = ".$mobil->Bacamerk()."<br>";
+echo "Harga Mobil = ".$mobil->Bacaharga()."<br>";
+echo "Negara Asal = ".$mobil->Bacahegara()."<br>";
+echo "==========================<br><br>";
+
+$mobil2 = new kendaraan("Xenia", 15000000000,"Tokyo");
+echo "Merk kendaraan = ".$mobil2->Bacamerk()."<br>";
+echo "Harga Mobil = ".$mobil2->Bacaharga()."<br>";
+echo "Negara Asal = ".$mobil2->Bacahegara()."<br>";
+echo "=========================<br><br>";
+
+$mobil3 = new kendaraan("Honda Jezz",900000000,"Belanda");
+echo "Merk kendaraan = ".$mobil3->Bacamerk()."<br>";
+echo "Harga Mobil = ".$mobil3->Bacaharga()."<br>";
+echo "Negara Asal = ".$mobil3->Bacahegara()."<br>";
+
+?>
