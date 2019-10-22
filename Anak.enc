@@ -1,0 +1,25 @@
+<?php
+/*pewarisan.php*/
+class Bapak {
+var $nama="Bapak";
+function Bapak($n){
+$this->nama =$n;
+}
+function Hello(){
+echo "Halo, Saya Anita Putri $this->nama<br>";
+}
+}
+class Anak extends Bapak{
+}
+$test = new Anak("Anak dari Bapak Joko");
+$test->Hello();
+}
+function Hello(){
+echo "Halo, Saya Anfredo $this->nama<br>";
+}
+}
+class Anak extends Bapak{
+}
+$test = new Anak("Anak Ke2 dari Bapak Joko");
+$test->Hello();
+?>

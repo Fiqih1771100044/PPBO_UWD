@@ -1,0 +1,19 @@
+<?php
+echo "=============CONTOH SINGLE INHERITANCE============= <br><br>";
+class Bapak {
+	var $nama="Bapak";
+	function Bapak($n){
+		$this->nama =$n;
+		}
+	function Hello(){
+		echo "Halo Saya $this->nama<br>";
+		}
+	}
+class Anak extends Bapak{
+}
+	$test = new Anak("Anita Putri Anak dari Bapak Joko <br>");
+	$test->Hello();
+	
+	$test = new Anak("Anfreddo Anak dari Bapak Joko");
+	$test->Hello();
+?>
